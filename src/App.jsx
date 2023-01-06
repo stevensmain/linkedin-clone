@@ -1,12 +1,15 @@
-import { useState } from 'react'
 import Header from './components/Header'
+import Sidebar from './components/sidebar/Sidebar'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App () {
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
+      <div className='container px-0 py-4'>
+        <div className='app__body layout__content'>
+          <Sidebar />
+        </div>
+      </div>
     </div>
   )
 }
